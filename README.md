@@ -33,14 +33,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    Adaptive layout:
+    This type of layout uses media queries and breakpoints for different screen sizes.The layout look is changed for different screen types(layout adapts according to the screen type).
+    The widths are hardcoded in this layout.
+    Responsive layout:
+    This type of layout uses media queries and breakpoints for different screen sizes as well as percentage widths.
+    Responsive designs have to take into account multiple devices and thus is difficult to make.
 
 2. Describe what it means to be mobile first vs desktop first.
-
+    Mobile first approch means designing the smaller screen  first and then creating designs for larger screens.
+    Desktop first approach is designing the larger screen  first and then going way down to smaller screens.
+    Depending on the number of screen visitors  a designer decides whether to use desktop first or mobile first design.
+ 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+    'font-size: 100%' in html tag will make 1rem = 16px. 
+    But it will make calculations a little difficult. A better way is to set font-size: 62.5% . Because 62.5% of 16px is 10px. So the font-sizes are set to the base of 10 and make calculations easier.
 4. How would you describe preprocessing to someone new to CSS?
+    CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors like less,Sass,Stylus.They add some features that don't exist in pure CSS, such as mixin, nesting selector which makes coding easier.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+   My favorite concept of preprocessing is using parametric mixins.
+   I like the way we do nesting in .less files but if not used correctly it gives the most trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -130,7 +143,7 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+* [*] Introduce CSS animations to your site.
 
 * [ ] Create a fixed navigation and add some opacity to the background
 
