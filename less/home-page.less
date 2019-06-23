@@ -6,12 +6,20 @@
 
     h2 {
       padding: 15px;
+
+      @media@phone {
+        width: 90%;
+      }
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
+
+      @media@phone {
+        width: 93%;
+      }
     }
-  
+
   }
 
   .space-images {
@@ -19,23 +27,56 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky {
+      @media@phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media@phone {
+        display: none;
+
+      }
+
+
+    }
+
+
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media@phone {
+        width: 100%;
+      }
     }
   }
 
+
   .visit-planets {
     padding: 15px;
+    margin-right: px;
 
     h3 {
       margin-top: 11px;
+
+      @media@phone {
+        width: 93%;
+      }
+
     }
 
     p {
       margin-top: 13px;
+
+      @media@phone {
+        width: 90%;
+      }
+
     }
   }
 
@@ -46,8 +87,20 @@
     display: flex;
     justify-content: center;
 
+    @media@phone {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media@phone {
+        width: 110%;
+        margin-top: 20px;
+      }
+
 
       h3 {
         margin-bottom: 10px;
@@ -57,14 +110,64 @@
         margin-bottom: 26px;
       }
 
+      @keyframes example {
+        0% {
+          background-color: @btn-bg-color;
+        }
+
+        25% {
+          background-color: teal;
+        }
+
+        50% {
+          background-color: coral;
+        }
+
+        75% {
+          background-color: hotpink;
+        }
+
+        100% {
+          background-color: @btn-bg-color;
+        }
+      }
+
       .btn {
+        .mybutton(200px);
+        animation-name: example;
+        animation-duration: 6s;
+
+        &:hover {
+          background-color: red;
+          color: blue;
+        }
+
+        @media@phone {
+          .mybutton(397px;
+          50px;
+          15px);
+          margin-left: 0px;
+          animation-name: example;
+          animation-duration: 6s;
+
+          &:hover {
+            background-color: red;
+            color: blue;
+          }
+        }
+
       }
     }
 
     .walk-img {
       width: 46%;
-      margin-left: 4%;
-      
+      margin-left: 0px;
+
+      @media@phone {
+        width: 120%;
+        margin-left: 1%;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +175,6 @@
       }
     }
   }
-}// home
+}
+
+// home

@@ -1,1 +1,26 @@
 // Mixins Here
+@phone: (max-width:500px);
+
+.myflex(@direction;
+
+@align) {
+    display: flex;
+    flex-direction: @direction ;
+    align-items: @align;
+}
+
+
+//mixin for Signup button
+.mybutton(@width;
+@height: 30px;
+
+@padding: 8px) {
+    width: @width;
+    height: @height;
+    border-radius: 5px;
+    background-color: @btn-bg-color;
+    font-size: 150%;
+    color: white;
+    padding: @padding;
+    text-align: center;
+}
